@@ -1,3 +1,3 @@
 # Learning_code
 
-### 01. Calculator using JavaScript
+### Real Time Face Detection using JavaScript
