@@ -13,10 +13,8 @@ const session = require( 'express-session' );
 
 initializePassport(
     passport,
-    email =>
-    {
-        return users.find( user => user.email === email )
-    } )
+    email => users.find( user => user.email === email )
+)
 
 const users = []
 
@@ -57,6 +55,7 @@ app.post( '/register', async ( req, res ) =>
     try
     {
         const hashedPassword = await bcrypt.hash( req.body.password, 10 )
+
         users.push( {
             id: Date.now().toString(),
             name: req.body.name,
