@@ -5,5 +5,5 @@
 
 ###### Notes 
     --> Generate access token 
-            -> run - node
-            -> run - require('crypto').randomBytes(64).toString('hex')
+        -> run - node
+        -> run - require('crypto').randomBytes(64).toString('hex')
