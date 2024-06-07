@@ -1,4 +1,4 @@
-# Self-Lurning
+# Self-Learning
 
 This is a collection of various small projects that I completed while studying web development. Here, you will find a range of examples showcasing my skills and learning journey in Web technologies.
 
