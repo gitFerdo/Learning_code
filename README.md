@@ -9,3 +9,5 @@ learn about JWT tokens
 - JWT Authentication
 - Node.js
 - Express
+
+- run backend - npm run devStart
