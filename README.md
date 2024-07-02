@@ -10,7 +10,7 @@ learn about JWT tokens
 - Node.js
 - Express
 
-- run backend - npm run devStart
+- run backend - npm run devStart - npm run devStartAuth
 
 - create secret key
   - in terminal run

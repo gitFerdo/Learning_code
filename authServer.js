@@ -4,22 +4,6 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 
-const posts = [
-  {
-    username: "user 1",
-    title: "Post 1",
-  },
-
-  {
-    username: "user 2",
-    title: "Post 2",
-  },
-];
-
-app.get("/posts", authenticateToken, (req, res) => {
-  res.json(posts.filter((post) => post.username === req.user.name));
-});
-
 app.use(express.json());
 
 app.post("/login", (req, res) => {
