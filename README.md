@@ -10,5 +10,6 @@
 - socket.io
 - uuid
 - nodemon
+- PeerJS
 
 run - npm run devStart
