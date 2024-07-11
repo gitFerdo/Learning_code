@@ -20,9 +20,11 @@ app.get("/:room", (req, res) => {
 
 io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
-    socket.join(roomId)
-    socket.to(roomId).broadcast.emit('user-joined', userId)
+    socket.join(roomId);
+    socket.to(roomId).emit("user-joined", userId);
   });
 });
 
-server.listen(3000);
+server.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
