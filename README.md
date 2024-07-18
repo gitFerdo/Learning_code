@@ -20,6 +20,10 @@ A login system implemented using Node.js and Passport.js. This project covers us
 
 An example of implementing JWT (JSON Web Token) authentication in a Node.js application. This project highlights how to secure RESTful APIs using JWT for authentication and authorization.
 
+### [Zoom Clone](https://github.com/gitFerdo/Learning_code/tree/Video-Chat-App)
+
+A Zoom clone application built using WebRTC, Express, ejs, socket.io, uuid, nodemon, and PeerJS. This project demonstrates real-time video and audio communication, room creation and joining, and chat functionality.
+
 ## Getting Started
 
 To get started with any of these projects, clone the repository and navigate to the respective project directory. Follow the instructions in each project's README file for setup and usage details.
