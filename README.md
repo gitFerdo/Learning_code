@@ -14,7 +14,7 @@ A real-time face detection application using JavaScript and the face-api.js libr
 
 ### [Login System (Passport) using Node.js](<https://github.com/gitFerdo/Learning_code/tree/login_system_(passport)>)
 
-A login system implemented using Node.js and Passport.js. This project covers user authentication, session management, and the use of Passport strategies for securing applications.
+A login system implemented using Node.js. This project covers user authentication, session management, and the use of Passport strategies for securing applications.
 
 ### [JWT Authentication using Node.js](https://github.com/gitFerdo/Learning_code/tree/JWT_Authentication-Node.js)
 
