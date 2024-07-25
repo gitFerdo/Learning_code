@@ -1,4 +1,5 @@
 const express = require("express");
+const Subscriber = require("../models/subscribers");
 
 const router = express.Router();
 
