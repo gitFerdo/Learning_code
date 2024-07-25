@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/66a2193b8cec913934efe242
+GET http://localhost:3000/subscribers/66a21f35a30face15e0d12fa
 
 ###
 
@@ -17,3 +17,12 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/subscribers/66a2193b8cec913934efe242
+
+###
+
+PATCH http://localhost:3000/subscribers/66a21f35a30face15e0d12fa
+Content-Type: application/json
+
+{
+    "name": "updated user"
+}
