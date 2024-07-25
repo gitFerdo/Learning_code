@@ -19,7 +19,19 @@ router.get("/:id", (req, res) => {
 });
 
 // Creating a new one
-router.post("/", (req, res) => {});
+router.post("/", async (req, res) => {
+  const subscriber = new Subscriber({
+    name: req.body.name,
+    subscriberToChannel: req.body.subscriberToChannel,
+  });
+
+  try {
+    const newSubscriber = await subscriber.save();
+    res.status(201).json(newSubscriber);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
 
 // Updating a one
 router.patch("/:id", (req, res) => {});
