@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
 });
 
 // Getting one
-router.get("/:id", (req, res) => {
   res.send(req.params.id);
 });
 
@@ -38,5 +37,22 @@ router.patch("/:id", (req, res) => {});
 
 // Delete a one
 router.delete("/:id", (req, res) => {});
+
+async function getSubscriber(req, res, next) {
+  let subscriber;
+
+  try {
+    subscriber = await Subscriber.findById(req.params.id);
+
+    if (subscriber == null) {
+      return res.status(404).json({ message: "No subscriber found" });
+    }
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+
+  res.subscriber = subscriber;
+  next();
+}
 
 module.exports = router;
