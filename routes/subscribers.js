@@ -14,7 +14,8 @@ router.get("/", async (req, res) => {
 });
 
 // Getting one
-  res.send(req.params.id);
+router.get("/:id", getSubscriber, (req, res) => {
+  res.send(res.subscriber.name);
 });
 
 // Creating a new one
